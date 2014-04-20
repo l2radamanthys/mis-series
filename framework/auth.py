@@ -20,7 +20,7 @@ class Auth:
         user = query[0]
         pass
 
-        request.set_cookie('username' username, secret=SECRET_KEY)
+        request.set_cookie('username', username, secret=SECRET_KEY)
         request.set_cookie('is_admin', user.is_super, secret=SECRET_KEY)
         
 

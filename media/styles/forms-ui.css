@@ -1,0 +1,173 @@
+
+.form-ui {
+    
+}
+
+.form-ui label {
+    display: block;
+    margin-left: 10pt;
+    margin-bottom: 3pt;
+}
+
+.form-ui .label {
+    display: inline-block;
+}
+
+.form-ui p {
+    margin-bottom: 5pt;
+}
+
+.form-ui input[type="text"], 
+.form-ui input[type="password"], 
+.form-ui textarea, 
+.form-ui select
+{
+    background: linear-gradient(center top , #FFFFFF,  #EEEEEE 1px, #FFFFFF 20px);
+    background: -moz-linear-gradient(center top , #FFFFFF,  #EEEEEE 1px, #FFFFFF 20px);    
+    background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
+    border: 1px solid #AFAFAF;
+    border-radius: 3px;
+    margin-left: 10pt;
+}
+
+
+.form-ui input[type="text"], 
+.form-ui input[type="password"]
+{
+    height: 20px;
+    font-size: 10pt;
+    padding: 5px 5px 4px 5px; 
+
+}
+
+.form-ui select {
+    heigth: 40px;
+    padding: 5px;
+    line-height: 1;
+    border: 1px solid #AAA;
+    min-width: 100px;
+    border-radius: 3px;
+}
+
+.form-ui textarea {
+    padding: 5px;
+    border: 1px solid #AAA;
+    border-radius: 3px;
+}
+
+
+.form-ui input[type="checkbox"].checkbox {
+    display: none;
+}
+
+
+.form-ui input[type="checkbox"].checkbox + label {
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../images/form-ui/check.png') 0px 0px no-repeat;    
+    text-indent: -1000em;
+}
+
+
+.form-ui input[type="checkbox"].checkbox:checked + label {
+    background: url('../images/form-ui/check.png') 0px -16px no-repeat;    
+}
+
+
+.form-ui input[type="radio"].radio {
+    display: none;
+}
+
+
+.form-ui input[type="radio"].radio + label {
+    background-color: #FFFFFF;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../images/form-ui/radio.png') 0px 0px no-repeat;    
+    text-indent: -1000em;
+}
+
+
+.form-ui input[type="radio"].radio:checked + label {
+    background: url('../images/form-ui/radio.png') 0px -16px no-repeat;    
+}
+
+.form-ui input[type="text"].icon-user
+{
+    background-image: url('../images/form-ui/user.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+/* Iconizados */
+/*********************************************************/
+.form-ui input[type="text"].icon-lock,
+.form-ui input[type="password"].icon-lock
+{
+    background-image: url('../images/form-ui/lock.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+
+.form-ui input[type="text"].icon-alert
+{
+    background-image: url('../images/form-ui/alert.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.form-ui input[type="text"].icon-check
+{
+    background-image: url('../images/form-ui/select.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.form-ui input[type="text"].icon-search
+{
+    background-image: url('../images/form-ui/search.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+/* Tamaños */
+/*********************************************************/
+.form-ui input[type="text"].f-xsmall
+{
+    width: 50px;
+}
+
+.form-ui input[type="text"].f-small
+{
+    width: 100px;
+}
+
+.form-ui input[type="text"].f-middle
+{
+    width: 150px;
+}
+
+.form-ui input[type="text"].f-xmiddle
+{
+    width: 200px;
+}
+
+.form-ui input[type="text"].f-large
+{
+    width: 250px;
+}
+
+.form-ui input[type="text"].f-xlarge
+{
+    width: 350px;
+}
+
