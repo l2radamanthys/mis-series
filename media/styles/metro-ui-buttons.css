@@ -1,0 +1,137 @@
+@font-face {
+    font-family: Segoe-UI;
+    src: url(../fonts/segoeui.ttf);
+}
+
+@font-face {
+    font-family: Segoe-UIL;
+    src: url(../fonts/segoeuil.ttf);
+}
+
+.metro-ui-button {
+    background-color: #d9522c;
+    color: #FFFFFF;
+    font-family: Segoe-UI, Verdana, Arial;
+    text-decoration: none;
+    font-size: 10pt;
+    padding: 7px 15px 8px 15px;
+    border-left: 2px solid #d9522c;
+    opacity: 0.8; 
+}
+
+.metro-ui-button:hover {
+    border-color: #FFFFFF;
+    opacity: 1;
+}
+
+.metro-ui-button:active {
+    background-color: #191919 !important;
+}
+
+
+.metro-ui-button.blue {
+    background-color: #0099ab;
+    border-left: 2px solid #0099ab;
+}
+
+
+.metro-ui-button.green {
+    background-color: #009900;
+    border-left: 2px solid #009900;
+}
+
+.metro-ui-button.red {
+    background-color: #cb2027;
+    border-left: 2px solid #cb2027;
+}
+
+
+.metro-ui-button.f-blue {
+    background-color: #0099ab;
+    border-left: 2px solid #0099ab;
+}
+
+.metro-ui-button.yellow {
+    background-color: #fba919;
+    border-left: 2px solid #fba919
+}
+
+.metro-ui-button.grey {
+    background-color: #474747;
+    border-left: 2px solid #474747;
+}
+
+/**/
+
+.metro-ui-button.icon-ok {
+    background-image: url('../images/metro-ui-buttons/ok.png');   
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 35px;
+}
+
+.metro-ui-button.icon-lock {
+    background-image: url('../images/metro-ui-buttons/lock.png');   
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 35px;
+}
+
+
+.metro-ui-button.icon-user {
+    background-image: url('../images/metro-ui-buttons/user.png');   
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 35px;
+}
+
+.metro-ui-button.icon-save {
+    background-image: url('../images/metro-ui-buttons/save.png');   
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 35px;
+}
+
+
+.metro-ui-button.icon-home {
+    background-image: url('../images/metro-ui-buttons/home.png');   
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 35px;
+}
+
+
+.metro-ui-button.icon-prev {
+    background-image: url('../images/metro-ui-buttons/back.png');   
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 35px;
+}
+
+
+.metro-ui-button.icon-next {
+    background-image: url('../images/metro-ui-buttons/foward.png');   
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 35px;
+}
+
+
+.metro-ui-button.icon-trash {
+    background-image: url('../images/metro-ui-buttons/trash.png');   
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 35px;
+}
+
+
+.metro-ui-button.icon-setings {
+    background-image: url('../images/metro-ui-buttons/setings.png');   
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 35px;
+}
+
+
+
+

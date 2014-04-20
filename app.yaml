@@ -1,0 +1,12 @@
+application: mis-anime
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /media
+  static_dir: media
+
+- url: /.*
+  script: main.app
