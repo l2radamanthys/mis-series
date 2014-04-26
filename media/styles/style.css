@@ -1,11 +1,14 @@
 h1, h2, h3, p {
-    font-family: Segoe-UI, Verdana;
-    margin-bottom: 5pt;
+    //font-family: Segoe-UI, Verdana;
+    margin-bottom: 10pt;
 }
 
 h1 {
-    font-size: 24pt;
+    font-size: 28pt;
+}
 
+p {
+    font-size: 12pt;
 }
 
 .body {
@@ -14,4 +17,34 @@ h1 {
     min-height: 400px;
     padding: 10px 10px;
     border: 1px solid #BBB;
+}
+
+.table {
+    font-size: 12pt;
+    font-family: Segoe-UI;
+    border: 1px solid #AAA;
+}
+
+.table th {
+    background-color: #EEE;
+    padding: 5px 10px;
+    border-left: 1px solid #AAA;
+}
+
+.table th:first-child {
+    border-left: 0;
+}
+
+table td {
+    padding: 3px 5px;
+    font-size: 11pt;
+    border-left: 1px solid #AAA;
+}
+
+.table td:first-child {
+    border-left: 0;
+}
+
+table tr {
+    border-bottom: 1px solid #AAA;
 }

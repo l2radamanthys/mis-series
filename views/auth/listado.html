@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    
+    <title>Mis Series</title>
+
+    <link rel="stylesheet" href="/media/styles/reset.css" />
+    <link rel="stylesheet" href="/media/styles/style.css" />
+    <link rel="stylesheet" href="/media/styles/metro-ui-buttons.css" />
+    <link rel="stylesheet" href="/media/styles/forms-ui.css" />
+</head>
+
+<body>
+
+    
+    <div class="body">
+        <h1>Mis Series - Listado de Usuarios</h1>
+
+        <table style="width: 780px; margin: 0 auto;" class="table">
+            <tr>
+                <th>Usuarios</th>
+                <th>Contraseña</th>
+                <th>Nombre</th>        
+                <th>Email</th>        
+            </tr>
+            % for usr in users:
+            <tr>
+                <td>{{ usr.username }}</td>
+                <td>{{ usr.password }}</td>
+                <td>{{ usr.name }}</td>
+                <td>{{ usr.email }}</td>
+            </tr>          
+            % end
+        </table>
+    </div>
+    
+    
+</body>
+
+</html>

@@ -18,10 +18,10 @@ class Auth:
     def login(self, username, password):
         query = db.GqlQuery("SELECT * FROM User WHERE username = :1", username)
         user = query[0]
-        pass
+        return user
 
-        request.set_cookie('username', username, secret=SECRET_KEY)
-        request.set_cookie('is_admin', user.is_super, secret=SECRET_KEY)
+        #request.set_cookie('username', username, secret=SECRET_KEY)
+        #request.set_cookie('is_admin', user.is_super, secret=SECRET_KEY)
         
 
 
