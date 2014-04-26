@@ -1,0 +1,17 @@
+h1, h2, h3, p {
+    font-family: Segoe-UI, Verdana;
+    margin-bottom: 5pt;
+}
+
+h1 {
+    font-size: 24pt;
+
+}
+
+.body {
+    width: 800px;
+    margin: 0 auto;
+    min-height: 400px;
+    padding: 10px 10px;
+    border: 1px solid #BBB;
+}

@@ -11,11 +11,11 @@ class User(db.Model):
     password = db.StringProperty()
     name = db.StringProperty()
     email = db.EmailProperty()
-    is_super = db.BooleanProperty(False)
+    is_super = db.BooleanProperty(default=False)
     
 
 class Auth:
-    def login(username, password):
+    def login(self, username, password):
         query = db.GqlQuery("SELECT * FROM User WHERE username = :1", username)
         user = query[0]
         pass
@@ -25,7 +25,7 @@ class Auth:
         
 
 
-    def is_login():
+    def is_login(self):
         """
             Consulta si hay un usuario logueado, en caso que si retornara su
             nombre de usuario, caso contrario devolvera False
@@ -37,8 +37,11 @@ class Auth:
             return False
 
     
-    def is_admin():
+    def is_admin(self):
         pass
+
+
+    
     
 
 
