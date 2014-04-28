@@ -1,0 +1,90 @@
+
+header {
+    background-color: #2A2A2A;
+}
+
+.header {
+    width: 990px;
+    margin: 0 auto;
+}
+
+.header p {
+    font-family: "Open Sans Extrabold";
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 24pt;
+    color: #FFF;
+    text-shadow: 0px 0px 3px #777;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    font-family: Open Sans, Arial;
+    font-size: 10pt;
+    color: #F7F7F7;
+    text-decoration: None;
+    padding: 5px 10px;
+}
+
+nav li a:hover {
+    padding-bottom: 2px;
+    border-bottom: 3px solid #FD5200;
+}
+
+
+section {
+    width: 970px;
+    margin: 0 auto;
+    padding: 10px 50px;
+}
+
+
+section h1 {
+    color: #DF4800;
+    font-family: Open Sans;
+    font-size: 24pt;
+    text-shadow: 0px 0px 1px #FFB591;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-family: Open Sans;
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+
+
+.table {
+    font-size: 12pt;
+    font-family: Segoe-UI;
+    border: 1px solid #AAA;
+}
+
+.table th {
+    background-color: #EEE;
+    padding: 5px 10px;
+    border-left: 1px solid #AAA;
+}
+
+.table th:first-child {
+    border-left: 0;
+}
+
+.table td {
+    padding: 3px 5px;
+    font-size: 11pt;
+    border-left: 1px solid #AAA;
+}
+
+.table td:first-child {
+    border-left: 0;
+}
+
+.table tr {
+    border-bottom: 1px solid #AAA;
+}
+

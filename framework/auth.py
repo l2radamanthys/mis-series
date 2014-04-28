@@ -1,9 +1,9 @@
 
-from bottle import request
+from bottle import request, response
 from google.appengine.ext import db
 
 #clave para codificar las cookies
-SECRET_KEY = "hola123" 
+SECRET_KEY = "hola123"
 
 
 class User(db.Model):
@@ -12,17 +12,20 @@ class User(db.Model):
     name = db.StringProperty()
     email = db.EmailProperty()
     is_super = db.BooleanProperty(default=False)
-    
+
+
 
 class Auth:
     def login(self, username, password):
-        query = db.GqlQuery("SELECT * FROM User WHERE username = :1", username)
-        user = query[0]
-        return user
+        query = db.GqlQuery("SELECT * FROM User WHERE username = :1 AND password = :2", username, password)
+        if (query.count() == 1):
+            user = query[0]
+            response.set_cookie('username', username, secret=SECRET_KEY, path="/")
+            response.set_cookie('is_admin', str(user.is_super), secret=SECRET_KEY, path="/")
+            return True
 
-        #request.set_cookie('username', username, secret=SECRET_KEY)
-        #request.set_cookie('is_admin', user.is_super, secret=SECRET_KEY)
-        
+        else:
+            return False
 
 
     def is_login(self):
@@ -36,12 +39,14 @@ class Auth:
         else:
             return False
 
-    
+
     def is_admin(self):
+        adm = request.get_cookie('is_admin', secret=SECRET_KEY)
+        return adm
+
+
+    def logout():
         pass
 
-
-    
-    
 
 

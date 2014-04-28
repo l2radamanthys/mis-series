@@ -1,0 +1,3 @@
+https://developers.google.com/appengine/docs/python/datastore/typesandpropertyclasses?csw=1#GeoPtProperty
+https://developers.google.com/appengine/articles/modeling?csw=1
+http://blog.notdot.net/2010/01/ReferenceProperty-prefetching-in-App-Engine

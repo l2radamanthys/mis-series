@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <link rel="stylesheet" href="/media/styles/reset.css" />
+    <link rel="stylesheet" href="/media/styles/page-style.css" />
+    <link rel="stylesheet" href="/media/styles/metro-ui-buttons.css" />
+    <link rel="stylesheet" href="/media/styles/forms-ui.css" />
+    <title>Mis Series</title>
+</head>
+
+<body>    
+<header>
+    <div class="header">
+        <p>MIS SERIES</p>
+    
+        <nav>
+            <ul>
+                <li><a href="/cronograma" title="">Cronograma</a></li>
+                <li><a href="/series/ver-hoy" title="">Ver Hoy</a></li>
+                <li><a href="/series/listado" title="">Mis Series</a></li>
+                <li><a href="/auth/logout" title="">Cerrar Session</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>    
+
+<section>
+
+        <h1>Listado de Series</h1>
+
+        <div style="text-align: right;">
+            <a href="/series/registrar" title="" class="metro-ui-button">Agregar</a>
+        </div>
+        <br /><br />
+        
+        <table style="width: 600px; margin: 0 auto;" class="table">
+            <tr>
+                <th>Nombre</th>
+                <th>Sale</th>
+                <th>Opciones</th>
+            </tr>
+            % setdefault('series', [])
+            % for serie in series:
+            <tr>
+                <td>{{ serie.name }}</td>
+                <td>{{ serie.day }}</td>
+            </tr>
+        </table>
+    
+
+</section>
+
+    
+</body>
+
+</html>

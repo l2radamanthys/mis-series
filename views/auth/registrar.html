@@ -1,51 +1,76 @@
 <!DOCTYPE html>
 <html lang="es-ar">
 <head>
-    
-    <title>Mis Series</title>
     <link rel="stylesheet" href="/media/styles/reset.css" />
-    <link rel="stylesheet" href="/media/styles/style.css" />
+    <link rel="stylesheet" href="/media/styles/page-style.css" />
     <link rel="stylesheet" href="/media/styles/metro-ui-buttons.css" />
-    <link rel="stylesheet" href="/media/styles/forms-ui.css" />    
+    <link rel="stylesheet" href="/media/styles/forms-ui.css" />
+    <link rel="stylesheet" href="/media/styles/fancy-notifications.css" />
+    <title>Mis Series</title>
 </head>
 
-<body>
-    <div class="body">
-    <h1>Mis Series</h1>
+<body>    
+<header>
+    <div class="header">
+        <p>MIS SERIES</p>
+    
+        <nav>
+            <ul>
+                <li><a href="/" title="">Home</a></li>
+                <li><a href="/auth/login" title="">Iniciar Session</a></li>
+                <li><a href="/auth/registrar" title="">Nuevo Usuario</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>    
 
-    <ul>
-        <li><a href="" title="">Home</a></li>
-        <li><a href="" title="">Calendario</a></li>
-        <li><a href="" title="">Agregar Serie</a></li>
-        <li><a href="" title="">Listado</a></li>
-    </ul>
+<section>
 
-    <br />
+        <h1>Nuevo Usuario</h1>
 
-    <form action="/auth/registrar" method="POST" class="form-ui">
+        <div style="width: 400px; margin: 0 auto;">
+        <form action="/auth/registrar" method="POST" class="form-ui">
 
-        <p>
-        <input type="text" name="username" value="" placeholder="Usuario" />
-        </p>
-        <p>
-        <input type="password" name="password" value="" placeholder="Contraseña" />
-        </p>
-        <p>
-        <input type="text" name="name" value="" placeholder="Nombre" />
-        </p>
-        <p>
-        <input type="text" name="email" value="" placeholder="Email" />
-        </p>                
+            % setdefault('username', "")
+            % setdefault('name', "")
+            % setdefault('email', "")
+            <p>
+            <input type="text" name="username" value="{{ username }}" placeholder="Usuario" />
+            </p>
+            <p>
+            <input type="password" name="password" value="" placeholder="Contraseña" />
+            <input type="password" name="repassword" value="" placeholder="Contraseña de Nuevo" />
+            </p>
+            <p>
+            <input type="text" name="name" value="{{ name }}" placeholder="Nombre" class="f-large"/>
+            </p>
+            <p>
+            <input type="text" name="email" value="{{ email }}" placeholder="Email" class="f-large" />
+            </p>                
 
-        <p>
-        <input type="submit" value="Registrar" class="metro-ui-button blue">
-        <input type="reset" value="Limpiar" class="metro-ui-button blue">
-        </p>
-        
-    </form>
+            <p style="text-align: center">
+            <input type="submit" value="Registrar" class="metro-ui-button blue">
+            <input type="reset" value="Limpiar" class="metro-ui-button blue">
+            </p>
+        </form>
+        </div>
+
+        <br />
+        <br />
+
+        % setdefault('form_error', False)
+        % setdefault('errors', [])
+        % if form_error:
+            <div class="notify-alert">
+            % for error in errors:
+                <p>{{ error }}</p>
+            % end
+            </div>
+        % end
+
+</section>
 
     
-    </div>
 </body>
 
 </html>

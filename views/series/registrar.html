@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <link rel="stylesheet" href="/media/styles/reset.css" />
+    <link rel="stylesheet" href="/media/styles/page-style.css" />
+    <link rel="stylesheet" href="/media/styles/metro-ui-buttons.css" />
+    <link rel="stylesheet" href="/media/styles/forms-ui.css" />
+    <title>Mis Series</title>
+</head>
+
+<body>    
+<header>
+    <div class="header">
+        <p>MIS SERIES</p>
+    
+        <nav>
+            <ul>
+                <li><a href="/cronograma" title="">Cronograma</a></li>
+                <li><a href="/series/ver-hoy" title="">Ver Hoy</a></li>
+                <li><a href="/series/listado" title="">Mis Series</a></li>
+                <li><a href="/auth/logout" title="">Cerrar Session</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section>
+    <h1>Registrar Serie</h1>
+
+    <div style="width: 500px; margin: 0 auto;">
+    <form action="/series/registrar" method="post" class="form-ui">
+        <p>
+        <label>Nombre de la Serie</label>
+        <input type="text" name="name" value="" class="f-xlarge"/>
+        </p>
+
+        <p>
+        <label>Dia que se emite:</label>
+        <select name="day">
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miercoles">Miercoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sabado">Sabado</option>
+            <option value="Domingo">Domingo</option>
+        </select> 
+        </p>
+
+        <p>
+        <label>Url:</label>
+        <input type="text" name="url" value="" class="f-xlarge"/>
+        </p>
+
+        <p>
+        <label>Formato Url Capitulo:</label>
+        <input type="text" name="chapter_url" value="" class="f-xlarge"/>
+        </p>
+
+        <p>
+        <label>Numero de Capitulos:</label>
+        <input type="text" name="mun_chapters" value="1" class="f-xsmall"/>
+        </p>
+
+        <p>
+        <label>Ultimo Capitulo Emitido:</label>
+        <input type="text" name="old_chapter" value="1" class="f-xsmall"/>
+        </p>
+
+        <p style="text-align: center;">
+        <input type="submit" value="Guardar" class="metro-ui-button icon-save" />  
+        </p>    
+    </form>
+    </div>
+    
+</section>
+
+    
+</body>
+
+</html>

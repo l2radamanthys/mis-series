@@ -1,0 +1,44 @@
+.notify-info, .notify-success, .notify-alert, .notify-error{
+	font-family: Open Sans, Verdana, Geneva, Arial;
+	font-size: 10pt;
+    border: 1px solid;
+    margin: 0 auto;
+    padding: 10px 5px 10px 40px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    box-shadow: 0px 0px 3px #AAA;  
+    width: 450px;
+}
+
+.notify-info p, .notify-success p, .notify-alert p, .notify-error p{
+    font-size: 10pt;
+}
+.notify-info li, .notify-success li, .notify-alert li, .notify-error li{
+	list-style-type: None;
+}
+
+.notify-info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('../images/fancy-notifications/information.png');
+
+}
+
+.notify-success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('../images/fancy-notifications/exito.png');
+}
+
+.notify-alert {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('../images/fancy-notifications/alert.png');
+}
+
+.notify-error {
+    color: #D8000C;
+    background-color: #FF8C8C;
+    background-image: url('../images/fancy-notifications/error.png');
+}
+

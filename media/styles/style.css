@@ -12,12 +12,30 @@ p {
 }
 
 .body {
+    margin-top: 20px;
     width: 800px;
     margin: 0 auto;
     min-height: 400px;
     padding: 10px 10px;
     border: 1px solid #BBB;
 }
+
+nav ul {
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    font-family: Segoe-UI, Arial;
+    font-size: 11pt;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px 15px;
+    background-color: #E64A00;
+}
+
 
 .table {
     font-size: 12pt;
