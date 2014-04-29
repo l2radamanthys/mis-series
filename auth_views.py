@@ -107,7 +107,7 @@ def do_login():
     if _auth.login(usr, pwd):
         redirect('/')
     else:
-        return template('auth/login.html', {"error": True})
+        return template('auth/login.html', {"login_error": True})
 
 
 def logout():

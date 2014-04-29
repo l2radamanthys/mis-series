@@ -8,7 +8,10 @@ from google.appengine.ext import db
 def listado():
     _auth = Auth()
     if _auth.is_login():
-        return template("series/listado.html")
+        data = {}
+        user = db.GqlQuery("SELECT * FROM User WHERE username = :1", _auth.is_login()).fetch(1)[0]
+        data['series'] = Serie.all().filter("user=",user)
+        return template("series/listado.html", data)
     else:
         return template("sin-permisos.html")
 
@@ -53,8 +56,9 @@ def do_registrar():
             enabled = _enabled
         )
         serie.put()
+       
+        # Registro los capitulos
         n = int(_old_chapter) + 1
-        #registro los capitulos
         for num in range(1, n):
             chapter = Chapter(
                 serie = serie,

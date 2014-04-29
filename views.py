@@ -7,8 +7,12 @@ from framework.auth import Auth
 
 def index():
     #pagina de inicio
-    return template('home.html')
-
+    _auth = Auth() 
+    if (_auth.is_login()):
+        is_login = True
+    else:
+        is_login = False
+    return template('home.html', {'is_login':is_login })
 
 
 def access_denied():
