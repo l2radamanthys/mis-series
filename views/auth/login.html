@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/media/styles/page-style.css" />
     <link rel="stylesheet" href="/media/styles/metro-ui-buttons.css" />
     <link rel="stylesheet" href="/media/styles/forms-ui.css" />
+    <link rel="stylesheet" href="/media/styles/fancy-notifications.css" />
     <title>Mis Series</title>
 </head>
 
@@ -45,7 +46,7 @@
 
         % setdefault('login_error', False)
         % if login_error:
-        <p>
+        <p class="notify-alert">
             Error Usuario o Contraseña Invalida
         </p>
         % end

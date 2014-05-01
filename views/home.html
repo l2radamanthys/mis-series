@@ -15,9 +15,16 @@
     
         <nav>
             <ul>
+            % if is_login: #
+                <li><a href="/cronograma" title="">Cronograma</a></li>
+                <li><a href="/series/ver-hoy" title="">Ver Hoy</a></li>
+                <li><a href="/series/listado" title="">Mis Series</a></li>
+                <li><a href="/auth/logout" title="">Cerrar Session</a></li>
+            % else:
                 <li><a href="/" title="">Home</a></li>
                 <li><a href="/auth/login" title="">Iniciar Session</a></li>
                 <li><a href="/auth/registrar" title="">Nuevo Usuario</a></li>
+            % end
             </ul>
         </nav>
     </div>
